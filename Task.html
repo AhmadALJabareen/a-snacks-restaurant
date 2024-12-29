@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        //Q7: Use a loop to display the numbers 0 through 5, each in a separate alert window:
+        for(i=0; i<=5; i++){
+            alert(i);
+        }
+//.....................................####..........................................................
+        // Q2: Use a loop to display the numbers 0 through 5 in a single alert window:
+        let a = "";
+        for(i=0; i<=5; i++){
+            a+= i+"\n";
+            
+        }
+        alert(x);
+
+//.....................................####..........................................................
+
+        // Q4: Prompt the user for a number in the range 0…100.  If the number is out of range, 
+        // display an error message and prompt again until a valid number is entered.
+        // Assume the user enters a number each time
+
+        let value = Number (window.prompt("Enter a number between 1-100"));
+        while( value >100 ){
+            alert("Error ! Try Again");
+            value = Number (window.prompt("Enter a number between 1-100"));
+        }
+
+//.....................................####..........................................................
+
+//Q5: Prompt for an integer, then display the sum of the integers from 0 through the number entered.
+// For example, if you enter 10, then display 55 which is the sum of   0 + 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10
+let x = "";
+let numValue = parseInt(window.prompt("Enter Integer Number "));
+for(i=0;i<=numValue;i++){
+    x+="+"+i ;
+}
+alert(x);
+
+
+
+    </script>
+</body>
+</html>

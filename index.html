@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center; background-color: blue;color: white;"> snacks  restaurant</h1>
+    <p>Welcome to Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut reprehenderit dolore obcaecati odio molestiae pariatur saepe laudantium aspernatur odit velit, vero voluptates, laboriosam nulla quisquam, illo totam tempora suscipit itaque?</p>
+
+
+
+    <script>
+        let personName = window.prompt(" Enter his/her name ");
+        let personGender = window.prompt("Enter his/her gender should be either (male or female)");
+
+        if(personGender == "male"){
+            alert(`Welcome Mr ${personName}`)
+        }else if(personGender == "female"){
+            alert(`Welcome Ms ${personName}`)
+        }else {
+            alert(`Welcome User`)
+        }
+
+        let food = window.prompt("What do you wants to order : 1) shawarma,2) zinger, 3) burger");
+        alert(`The order ${food} is being prepared`);
+        console.log(`${personName} your order is : ${food}`);
+
+        //.....................................####..........................................................
+        let variable = Number(window.prompt("enter value from 1-9"));
+        switch(variable){
+            case 1:
+                console.log("ONE");
+                break;
+            case 2:
+                console.log("TOW");
+                break;
+            case 3:
+                console.log("THREE");
+                break;
+            case 4:
+                console.log("FOUR");
+                break;
+            case 5:
+                console.log("FIVE");
+                break;
+            case 6:
+                console.log("SIX");
+                break;
+            case 7:
+                console.log("SEVEN");
+                break;
+            case 8:
+                console.log("EIGHT");
+                break;
+            case 9:
+                console.log("NINE");
+                break;
+            default :
+                console.log("PLEASE TRY AGAIN");
+        }
+
+
+
+    </script>
+</body>
+</html>
