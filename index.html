@@ -27,6 +27,8 @@
         alert(`The order ${food} is being prepared`);
         console.log(`${personName} your order is : ${food}`);
 
+        let age = window.prompt("Enter you age :");
+
         //update task
 
         let arr = [];
@@ -34,6 +36,26 @@
         console.log(arr);
         for(a=0;a<arr.length;a++){
             console.log(arr[a]);
+        }
+
+        let parent = document.createElement('div');
+        let paragraph = document.createElement('p');
+        let orderdList = document.createElement('ol');
+        
+
+        document.body.appendChild(parent);
+        parent.appendChild(paragraph);
+        parent.appendChild(orderdList);
+        
+
+        paragraph.textContent = personName;
+        let arrayData = [];
+        arrayData.push(personGender,age,food);
+
+        for(let i=0;i<arrayData.length;i++){
+            let list = document.createElement('li');
+            orderdList.appendChild(list);
+            list.textContent = arrayData[i];
         }
 
         //.....................................####..........................................................
